@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-white: #f9fafb;
+    --main-blue: #16a3cf;
+    --main-grey: #333333;
+    font-family: 'Roboto Mono', monospace;
+  }
+/* -- LEFT HAND SIDE -- */
+
+#logo {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 250px;
+    gap: 5px;
+}
+
+img {
+    opacity: 1;
+}
+
+#logo > img {
+    width: 100px;
+    height: 120px;
+}
+
+#logo > p {
+    color: var(--main-white);
+    font-size: 80px;
+}
+
+
+
+
+
+
+/* -- RIGHT HAND SIDE -- */
+
+#main {
+    display: flex;
+}
+
+#lhs {
+    background-image: url("./assets/background-lhs.jpg");
+    background-repeat: no-repeat;
+    background-size: 40vw 100vh;
+    width: 40vw;
+    height: 100vh;
+}
+
+#rhs {
+    background-color: var(--main-white);
+    width: 60vw;
+    height: 100vh;
+}
+
+span {
+    font-style: italic;
+}
+
