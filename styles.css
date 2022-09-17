@@ -10,6 +10,12 @@
     --main-grey: #333333;
     font-family: 'Roboto Mono', monospace;
   }
+
+  #main {
+    display: flex;
+}
+
+
 /* -- LEFT HAND SIDE -- */
 
 #logo {
@@ -37,17 +43,6 @@ img {
     font-size: 80px;
 }
 
-
-
-
-
-
-/* -- RIGHT HAND SIDE -- */
-
-#main {
-    display: flex;
-}
-
 #lhs {
     background-image: url("./assets/background-lhs.jpg");
     background-repeat: no-repeat;
@@ -55,6 +50,11 @@ img {
     width: 40vw;
     height: 100vh;
 }
+
+
+
+/* -- RIGHT HAND SIDE -- */
+
 
 #rhs {
     background-color: var(--main-white);
@@ -66,3 +66,63 @@ span {
     font-style: italic;
 }
 
+#content, #sign-up {
+    padding: 40px;
+}
+
+#content > p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.name, .person-info, .password {
+    display: flex;
+    gap: 150px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 30px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    border: none;
+    box-shadow: 10px 10px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#sign-up > p {
+    margin-top: 30px;
+}
+
+form > h1 {
+    margin-bottom: 30px;
+}
+
+form {
+    box-shadow: 3px 3px 5px #aaaaaa;
+    padding: 15px;
+}
+
+#content {
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+a {
+    color: var(--main-blue);
+}
